@@ -10,8 +10,8 @@
 <meta property="og:description" content="A curious CSE student learning by building projects and exploring AI/ML, cybersecurity, and game mechanics.">
 <meta name="twitter:card" content="summary">
 <title>Md. Iftee Raiyan — Student Portfolio | Web, AI/ML &amp; Games</title>
-<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-<link rel="apple-touch-icon" href="/assets/favicon.svg">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=ir1">
+<link rel="apple-touch-icon" href="/assets/favicon.svg?v=ir1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -82,6 +82,23 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
  .brand{min-width:0}
  .window-tag{display:none}
 }
+#window-contact .contact-panel{position:relative;overflow:hidden;grid-template-columns:minmax(0,1.2fr) minmax(220px,.8fr);gap:clamp(20px,4vw,42px);align-items:center;min-height:290px;padding:clamp(22px,4vw,38px)}
+#window-contact .contact-panel:after{content:"IR";position:absolute;right:18px;top:8px;color:#ffffff09;font-size:clamp(110px,20vw,190px);line-height:1;font-weight:700;letter-spacing:-.1em;pointer-events:none}
+#window-contact .contact-copy,#window-contact .contact-actions{position:relative;z-index:1;min-width:0}
+#window-contact .contact-status{display:inline-flex;align-items:center;gap:8px;margin-bottom:18px;padding:6px 9px;border:1px solid #ffffff45;color:#edf2e8;font:9px "DM Mono",monospace;letter-spacing:.08em}
+#window-contact .contact-status:before{content:"";width:7px;height:7px;border-radius:50%;background:#a5d832;box-shadow:0 0 0 3px #a5d83228}
+#window-contact .contact-panel h2{max-width:14ch;margin:0 0 13px;font-size:clamp(29px,4vw,40px);line-height:1.03;letter-spacing:-.06em}
+#window-contact .contact-panel p{max-width:43ch;font-size:13px;line-height:1.65}
+#window-contact .contact-interests{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+#window-contact .contact-interests span{padding:5px 8px;border:1px solid #ffffff45;color:#edf2e8;font:9px "DM Mono",monospace;letter-spacing:.04em}
+#window-contact .contact-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-content:center}
+#window-contact .contact-actions .button{width:100%;min-height:44px;justify-content:center;text-align:center;white-space:normal}
+#window-contact .contact-actions .contact-primary{grid-column:1/-1;min-height:50px;background:var(--accent);color:var(--accent-ink)}
+#window-contact .contact-actions .copy-email{background:transparent;color:#f7f8f2;border-color:#ffffff9c;box-shadow:3px 3px 0 #111}
+#window-contact .contact-socials{grid-column:1/-1;display:flex;justify-content:center;gap:22px;padding-top:10px;border-top:1px solid #ffffff45;color:#e0e4dd;font-size:12px;font-weight:700}
+#window-contact .contact-socials a:hover,#window-contact .contact-socials a:focus-visible{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:700px){#window-contact .contact-panel{grid-template-columns:minmax(0,1fr);gap:24px;min-height:0}#window-contact .contact-actions{max-width:390px}}
+@media(max-width:390px){#window-contact .contact-panel{padding:18px}#window-contact .contact-actions{grid-template-columns:minmax(0,1fr)}#window-contact .contact-actions .contact-primary,#window-contact .contact-socials{grid-column:1}}
 </style>
 </head>
 <body>
@@ -145,7 +162,7 @@ a[href^="mailto:"]{overflow-wrap:anywhere}
     </section>
     <section class="app-window" id="window-contact" data-window="contact" role="region" aria-label="Contact and collaboration" aria-hidden="true">
       <div class="window-titlebar" data-drag-handle><div class="window-controls"><button type="button" data-minimize aria-label="Minimize Contact window">−</button><button type="button" data-maximize aria-label="Resize Contact window">□</button><button type="button" data-close aria-label="Close Contact window">×</button></div><span class="window-name">Let’s make something together</span><span class="window-tag">06 / CONTACT</span></div>
-      <div class="window-scroll"><p class="eyebrow mono">START A CONVERSATION</p><div class="contact-panel"><div><h2>Let’s work on something together.</h2><p>I’m still learning and growing my skills. If you have an idea for a small project, I’d be glad to build, explore, and learn alongside you.</p><a class="email-address" href="mailto:ifteeraiyan123@gmail.com">ifteeraiyan123@gmail.com ↗</a></div><div class="contact-actions"><a class="button" href="mailto:ifteeraiyan123@gmail.com">Email me ↗</a><button class="button copy-email" type="button" data-copy-email>Copy email</button><a class="button" href="https://www.linkedin.com/in/md-iftee-raiyan-b20336386/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="button" href="https://github.com/MdIfteeRaiyan/" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div><p class="footer-note">OPEN TO IDEAS, COLLABORATION, AND LEARNING SOMETHING NEW. <span class="copyright">© <span id="copyrightYear"></span> Md. Iftee Raiyan</span></p></div>
+      <div class="window-scroll"><p class="eyebrow mono">LET’S TURN CURIOSITY INTO A PROJECT</p><div class="contact-panel"><div class="contact-copy"><span class="contact-status">OPEN TO COLLABORATION</span><h2>Have an idea? Let’s build it together.</h2><p>I’m always learning and exploring—whether that means trying a web idea, understanding game mechanics, or experimenting with AI/ML. Small projects and curious conversations are welcome.</p><div class="contact-interests" aria-label="Project interests"><span>WEB IDEAS</span><span>GAME MECHANICS</span><span>AI/ML</span></div></div><div class="contact-actions"><a class="button contact-primary" href="mailto:ifteeraiyan123@gmail.com">Send me a message ↗</a><button class="button copy-email" type="button" data-copy-email>Copy email</button><div class="contact-socials"><a href="https://www.linkedin.com/in/md-iftee-raiyan-b20336386/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/MdIfteeRaiyan/" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></div><p class="footer-note">LET’S CREATE, TEST, AND LEARN SOMETHING NEW. <span class="copyright">© <span id="copyrightYear"></span> Md. Iftee Raiyan</span></p></div>
     </section>
   </div>
 </main>
@@ -156,7 +173,9 @@ const projects=[
  {name:"TomarShikkha",type:"Education · Web application",description:"A student-friendly platform designed to make school learning and practice more approachable.",url:"https://tomar-shikkha.vercel.app/"},
  {name:"DebugTest",type:"Coding · Debugging",description:"An AI-assisted debugging project for exploring code issues and working through solutions.",url:"https://debugtest-ai-debugger.vercel.app/"},
  {name:"CampusChoice BD",type:"University · Discovery",description:"A university decision-support project for exploring options, comparing programs, and planning next steps.",url:"https://campuschoice-bd.vercel.app/"},
- {name:"SplitMind",type:"Everyday tools · Shared expenses",description:"A bill-splitting project that helps groups organize shared expenses and see who owes whom.",url:"https://splitmind-bd.vercel.app/"}
+ {name:"SplitMind",type:"Everyday tools · Shared expenses",description:"A bill-splitting project that helps groups organize shared expenses and see who owes whom.",url:"https://splitmind-bd.vercel.app/"},
+ {name:"Agerdin",type:"Games · Bangladeshi nostalgia",description:"An interactive game project inspired by the familiar games and memories of growing up in Bangladesh.",url:"https://agerdin.vercel.app/"},
+ {name:"Mishti Khan",type:"Game · Interactive satire",description:"A satirical interactive game that turns everyday choices and systems into a playful story.",url:"https://mishti-khan.vercel.app/"}
 ];
 const certificates=[
  {name:"CS107: C++ Programming",issuer:"Saylor University",date:"Sep 2026",area:"Programming",mark:"SAYLOR",image:"https://www.saylor.org/wp-content/uploads/2023/03/saylor-logo.png",certificateImage:"assets/saylor-cs107.webp",url:"https://learn.saylor.org/admin/tool/certificate/index.php?code=9037761853MR"},
@@ -178,7 +197,7 @@ const projectGrid=document.getElementById('projectGrid');projects.forEach((p,i)=
 const certStage=document.getElementById('certStage');certificates.forEach((c,i)=>{const card=document.createElement('article');card.className=`cert-card${c.certificateImage?' has-document':''}`;card.setAttribute('aria-hidden','true');const art=c.certificateImage?`<a class="cert-document" href="${c.certificateImage}" target="_blank" rel="noopener noreferrer" aria-label="Open full ${c.name} certificate image"><img src="${c.certificateImage}" alt="${c.name} certificate issued by ${c.issuer}" loading="lazy" decoding="async"></a>`:`<div class="cert-art" aria-label="${c.issuer} issuer artwork"><img src="${c.image}" alt="${c.issuer} logo" loading="lazy" decoding="async"><span>ISSUER</span></div>`;const link=c.url?`<a href="${c.url}" target="_blank" rel="noopener noreferrer">Verify ↗</a>`:c.certificateImage?`<a href="${c.certificateImage}" target="_blank" rel="noopener noreferrer">Open image ↗</a>`:'<span>Completed</span>';card.innerHTML=`<div>${art}<h3>${c.name}</h3><p class="cert-issuer">${c.issuer}</p></div><div class="cert-meta"><span>${c.date} · ${c.area}</span>${link}</div>`;card.dataset.index=i;certStage.append(card)});
 const toast=document.getElementById('toast');let toastTimer;
 function showToast(message,type='success'){toast.textContent=message;toast.classList.toggle('is-error',type==='error');toast.setAttribute('role',type==='error'?'alert':'status');toast.setAttribute('aria-live',type==='error'?'assertive':'polite');toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),3200)}
-async function copyEmail(){try{if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');await navigator.clipboard.writeText('ifteeraiyan123@gmail.com');showToast('Email address copied.','success')}catch{showToast('Could not copy the address. Use “Email me” to write instead.','error')}}
+async function copyEmail(){try{if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');await navigator.clipboard.writeText('ifteeraiyan123@gmail.com');showToast('Email address copied.','success')}catch{showToast('Could not copy the address. Use “Send me a message” instead.','error')}}
 document.querySelector('[data-copy-email]')?.addEventListener('click',copyEmail);
 const year=document.getElementById('copyrightYear');if(year)year.textContent=String(new Date().getFullYear());
 const windows=[...document.querySelectorAll('.app-window')],mobileMenu=document.querySelector('.mobile-menu-toggle'),sectionNames={profile:'About',projects:'Projects',explore:'Explore',certificates:'Learning',competitions:'Competitions',contact:'Contact'};let topZ=10,activeWindow='profile';
